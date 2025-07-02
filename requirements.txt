@@ -1,7 +1,5 @@
 joblib
 pandas
 numpy
-keras
-tensorflow
 scikit-learn
 xgboost
