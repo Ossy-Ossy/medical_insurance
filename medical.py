@@ -11,12 +11,12 @@ This app predicts the insurance cost estimate of an individual based on determin
 
 st.write('***')
 
-scaler = joblib.load("C:\\Users\\hp\\Downloads\\scaler_medical_insurance.joblib")
-model = joblib.load("C:\\Users\\hp\\Downloads\\model_medical_insurance.joblib")
-x = pd.read_csv("C:\\Users\\hp\\Downloads\\x_medical_insurance.csv")
+scaler = joblib.load("scaler_medical_insurance.joblib")
+model = joblib.load("model_medical_insurance.joblib")
+x = pd.read_csv("x_medical_insurance.csv")
 x.drop(x.columns[0],axis = 1,inplace = True)
 
-df = pd.read_csv("C:\\Users\\hp\\OneDrive\\Medical_Insurance.csv")
+df = pd.read_csv("Medical_Insurance.csv")
 # Strip whitespace from column names
 df.columns = df.columns.str.strip()
 
